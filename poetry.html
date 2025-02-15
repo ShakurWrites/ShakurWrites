@@ -5,90 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poetry - ShakurWrites</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.poem-thumbnail').click(function() {
-                let poemUrl = $(this).data('poem');
-                $('#poem-content').load(poemUrl);
-                $('#poem-modal').fadeIn();
-            });
-            $('#close-modal').click(function() {
-                $('#poem-modal').fadeOut();
-            });
-        });
-    </script>
-    <style>
-        body {
-            background: url('images/poetry-bg.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-        }
-        .banner {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            font-size: 24px;
-        }
-        .poem-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-        .poem-thumbnail {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        #poem-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .modal-content {
-            background: white;
-            color: black;
-            padding: 20px;
-            width: 50%;
-            border-radius: 10px;
-            text-align: left;
-        }
-        #close-modal {
-            margin-top: 10px;
-            cursor: pointer;
-            background: red;
-            color: white;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
-    <div class="banner">Poetry Collection</div>
-    <div class="poem-container">
-        <div class="poem-thumbnail" data-poem="Poetry/how_do_i_say_i_love_you.html">How Do I Say I Love You</div>
-        <div class="poem-thumbnail" data-poem="Poetry/the_pit_inside_me.html">The Pit Inside Me</div>
-        <div class="poem-thumbnail" data-poem="Poetry/waiting_for_the_fall.html">Waiting for the Fall</div>
-        <div class="poem-thumbnail" data-poem="Poetry/when_i_grow_up.html">When I Grow Up</div>
+    <h1>Poetry</h1>
+    <div class="poems">
+        <a href="Poetry/how_do_i_say_i_love_you.html">How Do I Say I Love You</a><br>
+        <a href="Poetry/the_pit_inside_me.html">The Pit Inside Me</a><br>
+        <a href="Poetry/waiting_for_the_fall.html">Waiting for the Fall</a><br>
+        <a href="Poetry/when_i_grow_up.html">When I Grow Up</a><br>
     </div>
-    
-    <div id="poem-modal">
-        <div class="modal-content">
-            <button id="close-modal">Close</button>
-            <div id="poem-content"></div>
-        </div>
-    </div>
-    
-    <a href="index.html" style="color: white;">Back to Home</a>
+    <a href="index.html">Back to Home</a>
 </body>
 </html>
