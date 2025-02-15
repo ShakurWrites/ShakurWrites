@@ -1,0 +1,52 @@
+/* General page styling */
+body {
+    font-family: 'Merriweather', serif;
+    background: url('../Images/short-stories-background.jpg') no-repeat center center/cover;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #ffcc66;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Stories container */
+.stories-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.9); /* Darker background for reading */
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Links to individual short stories */
+.story-list a {
+    display: block;
+    font-size: 1.3rem;
+    color: #ffcc66;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.story-list a:hover {
+    background: #663300;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #b0a8a8;
+}
