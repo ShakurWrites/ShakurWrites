@@ -1,3 +1,8 @@
 theme: minima
 title: ShakurWrites
 description: "A collection of poetry and short stories by Abdishakur Abdullahi."
+collections:
+  poetry:
+    output: true
+  short-stories:
+    output: true
