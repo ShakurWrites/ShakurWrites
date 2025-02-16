@@ -6,9 +6,10 @@
     <title>Short Stories - ShakurWrites</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
+        /* Fix navigation bar */
         .banner {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* Align buttons slightly left */
             align-items: center;
             background-color: #333;
             padding: 10px 20px;
@@ -22,7 +23,7 @@
         .banner nav {
             display: flex;
             gap: 15px;
-            margin-left: -30px; /* Move buttons slightly to the left */
+            margin-left: 20px; /* Slightly move buttons left */
         }
 
         .banner nav a {
@@ -32,9 +33,10 @@
         }
 
         body {
-            padding-top: 60px;
+            padding-top: 60px; /* Prevent content from hiding under banner */
         }
 
+        /* Fix short stories layout */
         .stories {
             display: flex;
             flex-wrap: wrap;
@@ -48,6 +50,7 @@
             cursor: pointer;
         }
 
+        /* Make sure stories open fully */
         .modal {
             display: none;
             position: fixed;
@@ -86,7 +89,8 @@
         }
     </style>
 </head>
-<body>
+<body class="short-stories"> <!-- Ensure correct class is added for the background -->
+
     <header class="banner">
         <h1>ShakurWrites - Short Stories</h1>
         <nav>
@@ -98,17 +102,17 @@
         </nav>
     </header>
     
-    <section class="content" style="background-image: url('images/stories-bg.jpg'); background-size: cover;">
+    <section class="content" style="background-image: url('images/short-stories-bg.jpg'); background-size: cover;">
         <h1>Short Stories</h1>
         <div class="stories">
+            <div class="story" onclick="openStory('Short-stories/the_melting_pot.html')">
+                <p>The Melting Pot</p>
+            </div>
             <div class="story" onclick="openStory('Short-stories/gilded_chains.html')">
                 <p>Gilded Chains</p>
             </div>
             <div class="story" onclick="openStory('Short-stories/the_inevitable_visitor.html')">
                 <p>The Inevitable Visitor</p>
-            </div>
-            <div class="story" onclick="openStory('Short-stories/the_melting_pot.html')">
-                <p>The Melting Pot</p>
             </div>
         </div>
     </section>
@@ -131,5 +135,6 @@
             document.getElementById('storyFrame').src = "";
         }
     </script>
+
 </body>
 </html>
