@@ -6,6 +6,7 @@
     <title>Contact - ShakurWrites</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
+        /* Banner styling */
         .banner {
             display: flex;
             justify-content: center;
@@ -19,10 +20,11 @@
             z-index: 1000;
         }
 
+        /* Moves buttons slightly to the left */
         .banner nav {
             display: flex;
             gap: 15px;
-            margin-left: -50px; /* Moves buttons slightly to the left */
+            margin-left: -40px;
         }
 
         .banner nav a {
@@ -34,11 +36,14 @@
 
         body {
             padding-top: 60px;
+            background-image: url('images/contact-bg.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .contact-content {
             max-width: 800px;
-            margin: 80px auto 20px;
+            margin: 100px auto 20px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
@@ -93,7 +98,7 @@
         </nav>
     </header>
 
-    <section class="content" style="background-image: url('images/contact-bg.jpg'); background-size: cover;">
+    <section class="content">
         <div class="contact-content">
             <h1>Contact Me</h1>
             <p>Have a question, a comment, or just want to say hello? Feel free to reach out!</p>
