@@ -5,6 +5,27 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Home Page Background */
+body.home {
+    background-image: url('images/home-bg.jpg');
+    background-repeat: no-repeat;
+}
+
+/* Poetry Page Background */
+body.poetry {
+    background-image: url('images/poetry-bg.jpg');
+    background-repeat: no-repeat;
+}
+
+/* Short Stories Page Background */
+body.short-stories {
+    background-image: url('images/stories-bg.jpg');
+    background-repeat: no-repeat;
 }
 
 /* Banner */
@@ -12,8 +33,14 @@ body {
     background-color: #333;
     color: white;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
+/* Banner Image */
 .banner-img {
     max-width: 100%;
     height: auto;
@@ -23,6 +50,9 @@ body {
 .nav-links {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px; /* Moves buttons slightly to the left */
 }
 
 .nav-links li {
@@ -39,9 +69,10 @@ body {
 /* Main Content */
 .content {
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight opacity for readability */
     max-width: 800px;
-    margin: 20px auto;
+    margin: 100px auto 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Soft blur effect */
 }
