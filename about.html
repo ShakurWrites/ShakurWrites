@@ -5,24 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - ShakurWrites</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .banner nav {
+            display: flex;
+            gap: 15px;
+            margin-left: -30px; /* Move buttons slightly to the left */
+        }
+
+        .banner nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 80px auto 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Poetry/">Poetry</a></li>
-            <li><a href="Short-stories/">Short Stories</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="banner">
+        <h1>ShakurWrites - About Me</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="poetry.html">Poetry</a>
+            <a href="short-stories.html">Short Stories</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <h1>About Me</h1>
-    <p>Hello! I'm Abdishakur Mohammed, a passionate writer who explores the depths of human emotions through poetry and storytelling. 
-       I believe every person has a unique story to tell, and my goal is to bring those stories to life through words. 
-       Whether it’s poetry that resonates with the soul or short stories that captivate the mind, I strive to create content 
-       that leaves a lasting impact.</p>
+    <section class="content" style="background-image: url('images/about-bg.jpg'); background-size: cover;">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>Hello! I'm Abdishakur Mohammed, a passionate writer who explores the depths of human emotions through poetry and storytelling. 
+               I believe every person has a unique story to tell, and my goal is to bring those stories to life through words. 
+               Whether it’s poetry that resonates with the soul or short stories that captivate the mind, I strive to create content 
+               that leaves a lasting impact.</p>
 
-    <p>Welcome to my little corner of the internet. I hope you find something here that speaks to you.</p>
+            <p>Welcome to my little corner of the internet. I hope you find something here that speaks to you.</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 ShakurWrites. All Rights Reserved.</p>
