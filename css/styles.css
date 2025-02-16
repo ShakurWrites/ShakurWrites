@@ -12,20 +12,23 @@ body {
 
 /* Home Page Background */
 body.home {
-    background-image: url('images/home-bg.jpg');
+    background-image: url('../images/home-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Poetry Page Background */
 body.poetry {
-    background-image: url('images/poetry-bg.jpg');
+    background-image: url('../images/poetry-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Short Stories Page Background */
 body.short-stories {
-    background-image: url('images/stories-bg.jpg');
+    background-image: url('../images/stories-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Banner */
