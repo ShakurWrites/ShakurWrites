@@ -20,16 +20,45 @@
         </nav>
     </header>
     
-    <section class="content">
+    <section class="content" style="background-image: url('images/poetry-bg.jpg'); background-size: cover;">
         <h1>Poetry</h1>
         <div class="poems">
-            <a href="Poetry/how_do_i_say_i_love_you.html">How Do I Say I Love You</a><br>
-            <a href="Poetry/the_pit_inside_me.html">The Pit Inside Me</a><br>
-            <a href="Poetry/waiting_for_the_fall.html">Waiting for the Fall</a><br>
-            <a href="Poetry/when_i_grow_up.html">When I Grow Up</a><br>
+            <div class="poem" onclick="openPoem('Poetry/how_do_i_say_i_love_you.html')">
+                <img src="icons/poem1.png" alt="How Do I Say I Love You">
+                <p>How Do I Say I Love You</p>
+            </div>
+            <div class="poem" onclick="openPoem('Poetry/the_pit_inside_me.html')">
+                <img src="icons/poem2.png" alt="The Pit Inside Me">
+                <p>The Pit Inside Me</p>
+            </div>
+            <div class="poem" onclick="openPoem('Poetry/waiting_for_the_fall.html')">
+                <img src="icons/poem3.png" alt="Waiting for the Fall">
+                <p>Waiting for the Fall</p>
+            </div>
+            <div class="poem" onclick="openPoem('Poetry/when_i_grow_up.html')">
+                <img src="icons/poem4.png" alt="When I Grow Up">
+                <p>When I Grow Up</p>
+            </div>
         </div>
     </section>
     
-    <script src="js/app.js"></script>
+    <div id="poemModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePoem()">&times;</span>
+            <iframe id="poemFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        function openPoem(url) {
+            document.getElementById('poemFrame').src = url;
+            document.getElementById('poemModal').style.display = 'block';
+        }
+        
+        function closePoem() {
+            document.getElementById('poemModal').style.display = 'none';
+            document.getElementById('poemFrame').src = "";
+        }
+    </script>
 </body>
 </html>
