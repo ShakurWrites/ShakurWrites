@@ -3,27 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - ShakurWrites</title>
+    <title>Contact - ShakurWrites</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .banner nav {
+            display: flex;
+            gap: 15px;
+            margin-left: -50px; /* Moves buttons slightly to the left */
+        }
+
+        .banner nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 80px auto 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact Me</h1>
-    <p>Feel free to reach out to me through email or connect with me on social media.</p>
+    <header class="banner">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="poetry.html">Poetry</a>
+            <a href="short-stories.html">Short Stories</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <ul>
-        <li>Email: <a href="mailto:suhamabdishakur@gmail.com">suhamabdishakur@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/abdishakur-abdullahi-b06679259/" target="_blank">Abdishakur Abdullahi</a></li>
-        <li>X (Twitter): <a href="https://x.com/suhamabdishakur" target="_blank">@suhamabdishakur</a></li>
-    </ul>
+    <section class="content" style="background-image: url('images/contact-bg.jpg'); background-size: cover;">
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p>Have a question, a comment, or just want to say hello? Feel free to reach out!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="Poetry/">Poetry</a></li>
-            <li><a href="Short-stories/">Short Stories</a></li>
-        </ul>
-    </nav>
+    <footer>
+        <p>&copy; 2025 ShakurWrites. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
-`
