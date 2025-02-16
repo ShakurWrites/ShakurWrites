@@ -9,7 +9,7 @@
         /* Fix navigation bar */
         .banner {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* Align buttons slightly left */
             align-items: center;
             background-color: #333;
             padding: 10px 20px;
@@ -23,6 +23,7 @@
         .banner nav {
             display: flex;
             gap: 15px;
+            margin-left: 20px; /* Slightly move buttons left */
         }
 
         .banner nav a {
@@ -104,19 +105,15 @@
         <h1>Poetry</h1>
         <div class="poems">
             <div class="poem" onclick="openPoem('Poetry/how_do_i_say_i_love_you.html')">
-                <img src="icons/poem1.png" alt="How Do I Say I Love You">
                 <p>How Do I Say I Love You</p>
             </div>
             <div class="poem" onclick="openPoem('Poetry/the_pit_inside_me.html')">
-                <img src="icons/poem2.png" alt="The Pit Inside Me">
                 <p>The Pit Inside Me</p>
             </div>
             <div class="poem" onclick="openPoem('Poetry/waiting_for_the_fall.html')">
-                <img src="icons/poem3.png" alt="Waiting for the Fall">
                 <p>Waiting for the Fall</p>
             </div>
             <div class="poem" onclick="openPoem('Poetry/when_i_grow_up.html')">
-                <img src="icons/poem4.png" alt="When I Grow Up">
                 <p>When I Grow Up</p>
             </div>
         </div>
